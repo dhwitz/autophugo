@@ -6,8 +6,8 @@
 {{- with $description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ $author := .Params.author.name | default .Site.Author.name }}
 {{- with $author }}<meta name="author" content="{{ . }}">{{ end }}
-<link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
-<link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}">
+<link rel="icon" href="/img/favicon.ico">
+<link rel="shortcut icon" href="/img/favicon.ico">
 
 {{- partial "scratch_set_retalbumthumb.html" . }}
 {{- /* Note that the Scratch below must come from . context, not $ */}}
